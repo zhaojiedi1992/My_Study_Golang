@@ -1,0 +1,16 @@
+依赖管理
+===================
+
+godep
+--------------------
+
+godep 是一个Go语言官方提供的通过 vender 模式来管理第三方依赖的工具，类似的还有由社区维护的准官方包管理工具 dep。
+
+Go语言从 1.5 版本开始开始引入 vendor 模式，如果项目目录下有 vendor 目录，那么Go语言编译器会优先使用 vendor 内的包进行编译、测试等。
+
+安装godep
+
+.. code-block:: go
+
+    go get github.com/tools/godep
+

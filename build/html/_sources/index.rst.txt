@@ -1,20 +1,15 @@
-.. My_Study_Golang documentation master file, created by
-   sphinx-quickstart on Fri Dec  6 12:59:02 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Linux服务
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Welcome to My_Study_Golang's documentation!
-===========================================
+我自己对golang文档的学习笔记
+
+github地址_
+
+.. _github地址: https://github.com/zhaojiedi1992/My_Study_Golang
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :caption: golang简介
+    :numbered:
+    :glob:
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    1golang简介/*

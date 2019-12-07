@@ -1,0 +1,253 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2. 特性 &mdash; My_Study_Golang v1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. 并发而生" href="并发而生.html" />
+    <link rel="prev" title="1. 简介" href="简介.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> My_Study_Golang
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">golang简介</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="简介.html">1. 简介</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. 特性</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.1. 语法简单</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2.2. 并发模型</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6">2.3. 内存分配</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7">2.4. 垃圾回收</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8">2.5. 静态链接</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">2.6. 标准库</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">2.7. 工具链</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="并发而生.html">3. 并发而生</a></li>
+<li class="toctree-l1"><a class="reference internal" href="哪些公司使用go.html">4. 哪些公司使用go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="go适合做什么.html">5. go适合做什么</a></li>
+<li class="toctree-l1"><a class="reference internal" href="依赖管理.html">6. 依赖管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="工程结构详述.html">7. 工程结构详述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="第一个go.html">8. 第一个go程序</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">My_Study_Golang</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>2. 特性</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/golang简介/特性.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>2. 特性<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>2.1. 语法简单<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>语法规则严谨，没有黑魔法变异用法，任何人写出来的代码基本一致。</p></li>
+<li><p>将`++`和`–<a href="#id3"><span class="problematic" id="id4">`</span></a>从运算符降级为语句，保留指针，但默认阻止指针运算。</p></li>
+<li><p>切片和字典作为内置类型。</p></li>
+</ol>
+</div>
+<div class="section" id="id5">
+<h2>2.2. 并发模型<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>Goroutine是go最显著特征，它用类协程的方式来处理并发单元，却又在运行时层面做了深度优化处理。</p>
+</div>
+<div class="section" id="id6">
+<h2>2.3. 内存分配<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p>go采用tcmalloc, 它本身就是为并发设计的高性能内存分配组件。</p>
+</div>
+<div class="section" id="id7">
+<h2>2.4. 垃圾回收<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p>每次升级，垃圾回收器必然是核心组件里修改最多的部分，逐步引入三色标记和写屏障等等，都是为了能让垃圾
+回收在不影响用户逻辑的情况下更好地工作。尽管有了努力，当前版本的垃圾回收算法也只能说堪用，离好用尚有不少距离。</p>
+</div>
+<div class="section" id="id8">
+<h2>2.5. 静态链接<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p>Go 刚发布时，静态链接被当作优点宣传。只须编译后的一个可执行文件，无须附加任何东西就能部署。</p>
+</div>
+<div class="section" id="id9">
+<h2>2.6. 标准库<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>功能完善、质量可靠的标准库为编程语言提供了充足动力。</p>
+</div>
+<div class="section" id="id10">
+<h2>2.7. 工具链<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p>完整的工具链对于日常开发极为重要。Go 在此做得相当不错，无论是编译、格式化、错误检查、帮助文档，还是第三方包下载、
+更新都有对应的工具。其功能未必完善，但起码算得上简单易用。</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="并发而生.html" class="btn btn-neutral float-right" title="3. 并发而生" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="简介.html" class="btn btn-neutral float-left" title="1. 简介" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhaojiedi1992
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+关键字与标识符简述
+======================================
+
+词法元素包括 5 种，分别是标识符（identifier）、关键字（keyword）、操作符（operator）、分隔符（delimiter）、字面量（literal），
+它们是组成Go语言代码和程序的最基本单位。
+
+
+关键字
+----------------------------
+
+Go语言中的关键字一共有 25 个：
+
+.. code-block:: text 
+
+    break	default 	func	interface	select
+    case	defer	go	map	struct
+    chan	else	goto	package	switch
+    const	fallthrough	if	range	type
+    continue	for	import	return	var
+
+标示符
+----------------------------
+
+标识符是指Go语言对各种变量、方法、函数等命名时使用的字符序列，
+标识符由若干个字母、下划线_、和数字组成，且第一个字符必须是字母。
+通俗的讲就是凡可以自己定义的名称都可以叫做标识符。
+下划线_是一个特殊的标识符，称为空白标识符，
+
+

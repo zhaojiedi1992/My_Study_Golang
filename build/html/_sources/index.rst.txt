@@ -24,4 +24,31 @@ github地址_
     golang简介/工程结构详述
     golang简介/第一个go
 
+.. toctree::
+    :caption: golang基本语法
+    :numbered:
+    :glob:
 
+    golang基本语法/变量逃逸分析
+    golang基本语法/指针
+    golang基本语法/变量生命周期
+    golang基本语法/变量作用域
+    golang基本语法/关键字与标识符简述
+    golang基本语法/匿名变量
+    golang基本语法/变量定义
+    golang基本语法/注释
+    golang基本语法/基本数据类型
+    golang基本语法/常量
+    golang基本语法/变量初始化
+
+
+
+.. toctree::
+    :caption: golangr容器
+    :numbered:
+    :glob:
+
+    golang容器/数组
+    golang容器/多维数组
+    golang容器/切片
+    golang容器/切片操作

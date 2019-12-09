@@ -1,0 +1,46 @@
+常量
+=========================
+
+
+常量使用关键字 const 定义，用于存储不会改变的数据，常量是在编译时被创建的，即使定义在函数内部也是如此，
+并且只能是布尔型、数字型（整数型、浮点型和复数）和字符串型。由于编译时的限制，定义常量的表达式必须为能被编译器求值的常量表达式。
+
+.. code-block:: go
+
+    const (
+        e  = 2.7182818
+        pi = 3.1415926
+    )
+
+
+iota生成常量
+--------------------
+
+.. code-block:: go 
+
+    type Weekday int
+    const (
+            Sunday Weekday = iota
+            Monday
+            Tuesday
+            Wednesday
+            Thursday
+            Friday
+            Saturday
+    )
+
+模拟枚举
+-----------------------
+
+.. code-block:: go 
+
+    const (
+        FlagNone = 1 << iota
+        FlagRed
+        FlagGreen
+        FlagBlue
+    )
+
+    fmt.Printf("%d %d %d\n", FlagRed, FlagGreen, FlagBlue)
+    fmt.Printf("%b %b %b\n", FlagRed, FlagGreen, FlagBlue)
+    

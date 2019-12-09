@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>4. 切片操作 &mdash; My_Study_Golang v1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="3. 切片" href="切片.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> My_Study_Golang
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">golang简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/简介.html">1. 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/特性.html">2. 特性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/并发而生.html">3. 并发而生</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/哪些项目使用go.html">4. 哪些项目使用go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/哪些公司使用go.html">5. 哪些公司使用go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/go适合做什么.html">6. go适合做什么</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/go优势和劣势.html">7. go优势和劣势</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/依赖管理.html">8. 依赖管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/安装go.html">9. 安装go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/工程结构详述.html">10. 工程结构详述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/第一个go.html">11. 第一个go程序</a></li>
+</ul>
+<p class="caption"><span class="caption-text">golang基本语法</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量逃逸分析.html">1. 变量逃逸分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/指针.html">2. 指针</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量生命周期.html">3. 变量生命周期</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量作用域.html">4. 变量作用域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/关键字与标识符简述.html">5. 关键字与标识符简述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/匿名变量.html">6. 匿名变量</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量定义.html">7. 变量定义</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/注释.html">8. 注释</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/基本数据类型.html">9. 基本数据类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/常量.html">10. 常量</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量初始化.html">11. 变量初始化</a></li>
+</ul>
+<p class="caption"><span class="caption-text">golangr容器</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="数组.html">1. 数组</a></li>
+<li class="toctree-l1"><a class="reference internal" href="多维数组.html">2. 多维数组</a></li>
+<li class="toctree-l1"><a class="reference internal" href="切片.html">3. 切片</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. 切片操作</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#append">4.1. append</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copy">4.2. copy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delete">4.3. delete</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">My_Study_Golang</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>4. 切片操作</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/golang容器/切片操作.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>4. 切片操作<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="append">
+<h2>4.1. append<a class="headerlink" href="#append" title="Permalink to this headline">¶</a></h2>
+<p>内建函数 append() 可以为切片动态添加元素，代码如下</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">a</span> <span class="p">[]</span><span class="kt">int</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">a</span><span class="p">,[]</span><span class="kt">int</span><span class="p">{</span> <span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">}</span>
+
+<span class="nx">a</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">a</span><span class="p">[:</span><span class="nx">i</span><span class="p">],</span> <span class="nb">append</span><span class="p">([]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">})</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>数组的长度和容量是2个概念， 切片在扩容的时候， 容量是原来容量的2倍进行扩充的。</p>
+</div>
+</div>
+<div class="section" id="copy">
+<h2>4.2. copy<a class="headerlink" href="#copy" title="Permalink to this headline">¶</a></h2>
+<p>内置函数 copy() 可以将一个数组切片复制到另一个数组切片中，如果加入的两个数组切片不一样大，就会按照其中较小的那个数组切片的元素个数进行复制。</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="nx">slice1</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">}</span>
+<span class="nx">slice2</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nb">copy</span><span class="p">(</span><span class="nx">slice2</span><span class="p">,</span> <span class="nx">slice1</span><span class="p">)</span> <span class="c1">// 只会复制slice1的前3个元素到slice2中</span>
+<span class="nb">copy</span><span class="p">(</span><span class="nx">slice1</span><span class="p">,</span> <span class="nx">slice2</span><span class="p">)</span> <span class="c1">// 只会复制slice2的3个元素到slice1的前3个位置</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="delete">
+<h2>4.3. delete<a class="headerlink" href="#delete" title="Permalink to this headline">¶</a></h2>
+<p>并没有对删除切片元素提供专用的语法或者接口，需要使用切片本身的特性来删除元素，根据要删除元素的位置有三种情况，分别是从开头位置删除、
+从中间位置删除和从尾部删除，其中删除切片尾部的元素速度最快。</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="nx">a</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nx">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="c1">// 删除开头1个元素</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nx">a</span><span class="p">[</span><span class="nx">N</span><span class="p">:]</span> <span class="c1">// 删除开头N个元素</span>
+
+<span class="nx">a</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">...</span><span class="p">}</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">a</span><span class="p">[:</span><span class="nx">i</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span><span class="o">...</span><span class="p">)</span> <span class="c1">// 删除中间1个元素</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">a</span><span class="p">[:</span><span class="nx">i</span><span class="p">],</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="nx">N</span><span class="p">:]</span><span class="o">...</span><span class="p">)</span> <span class="c1">// 删除中间N个元素</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nx">a</span><span class="p">[:</span><span class="nx">i</span><span class="o">+</span><span class="nb">copy</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">:],</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="mi">1</span><span class="p">:])]</span> <span class="c1">// 删除中间1个元素</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nx">a</span><span class="p">[:</span><span class="nx">i</span><span class="o">+</span><span class="nb">copy</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="p">:],</span> <span class="nx">a</span><span class="p">[</span><span class="nx">i</span><span class="o">+</span><span class="nx">N</span><span class="p">:])]</span> <span class="c1">// 删除中间N个元素</span>
+
+<span class="nx">a</span> <span class="p">=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nx">a</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="c1">// 删除尾部1个元素</span>
+<span class="nx">a</span> <span class="p">=</span> <span class="nx">a</span><span class="p">[:</span><span class="nb">len</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span><span class="o">-</span><span class="nx">N</span><span class="p">]</span> <span class="c1">// 删除尾部N个元素</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>连续容器的元素删除无论在任何语言中，都要将删除点前后的元素移动到新的位置，随着元素的增加，这个过程将会变得极为耗时，因此，当业务需要大量、
+频繁地从一个切片中删除元素时，如果对性能要求较高的话，就需要考虑更换其他的容器了（如双链表等能快速从删除点删除元素）。</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="切片.html" class="btn btn-neutral float-left" title="3. 切片" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhaojiedi1992
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

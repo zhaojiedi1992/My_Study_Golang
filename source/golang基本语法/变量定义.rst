@@ -1,0 +1,30 @@
+变量定义
+========================
+
+单个变量定义
+-------------------
+
+.. code-block:: text
+
+    var 变量名 变量类型
+
+多个变量定义
+-------------------
+
+.. code-block:: text
+
+   var (
+        a int
+        b string
+        c []float32
+        d func() bool
+        e struct {
+            x int
+        }
+    )
+
+单个简单方式
+-------------------
+
+.. code-block:: text   
+    名字 := 表达式

@@ -1,0 +1,16 @@
+匿名变量
+=========================
+匿名变量的特点是一个下画线“_”，“_”本身就是一个特殊的标识符，被称为空白标识符。
+
+.. code-block:: go 
+
+    func main(){
+        a, _ := GetData()
+        _, b := GetData()
+        fmt.Println(a, b)
+    }
+
+
+    func GetData() (int, int) {
+        return 100, 200
+    }

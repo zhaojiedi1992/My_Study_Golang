@@ -1,0 +1,9 @@
+编译运行
+========================
+
+go提供 `go build `,`go run ` 2种方式。 
+
+
+.. code-block:: go 
+
+    go run hello.go

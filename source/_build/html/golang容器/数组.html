@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>数组 &mdash; My_Study_Golang v1.0.0 documentation</title>
+  <title>1. 数组 &mdash; My_Study_Golang v1.0.0 documentation</title>
   
 
   
@@ -34,7 +34,9 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2. 多维数组" href="多维数组.html" />
+    <link rel="prev" title="11. 变量初始化" href="../golang基本语法/变量初始化.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -107,9 +109,16 @@
 <li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量初始化.html">11. 变量初始化</a></li>
 </ul>
 <p class="caption"><span class="caption-text">golangr容器</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="多维数组.html">1. 多维数组</a></li>
-<li class="toctree-l1"><a class="reference internal" href="切片.html">2. 切片</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 数组</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">1.1. 声明方式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">1.2. 遍历数组</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="多维数组.html">2. 多维数组</a></li>
+<li class="toctree-l1"><a class="reference internal" href="切片.html">3. 切片</a></li>
+<li class="toctree-l1"><a class="reference internal" href="切片操作.html">4. 切片操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="range.html">5. range</a></li>
 </ul>
 
             
@@ -155,7 +164,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>数组</li>
+      <li>1. 数组</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -175,16 +184,16 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>数组<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>1. 数组<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>数组是一个由固定长度的特定类型元素组成的序列，一个数组可以由零个或多个元素组成。因为数组的长度是固定的，所以在Go语言中很少直接使用数组。</p>
 <div class="section" id="id2">
-<h2>声明方式<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>1.1. 声明方式<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">数组变量名</span> <span class="p">[</span><span class="nx">元素数量</span><span class="p">]</span><span class="nx">Type</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id3">
-<h2>遍历数组<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<h2>1.2. 遍历数组<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">team</span> <span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="kt">string</span>
 <span class="nx">team</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;hammer&quot;</span>
 <span class="nx">team</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="s">&quot;soldier&quot;</span>
@@ -202,6 +211,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="多维数组.html" class="btn btn-neutral float-right" title="2. 多维数组" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../golang基本语法/变量初始化.html" class="btn btn-neutral float-left" title="11. 变量初始化" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

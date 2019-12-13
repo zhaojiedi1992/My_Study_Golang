@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2. 切片 &mdash; My_Study_Golang v1.0.0 documentation</title>
+  <title>3. 切片 &mdash; My_Study_Golang v1.0.0 documentation</title>
   
 
   
@@ -35,7 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="1. 多维数组" href="多维数组.html" /> 
+    <link rel="next" title="4. 切片操作" href="切片操作.html" />
+    <link rel="prev" title="2. 多维数组" href="多维数组.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -109,12 +110,15 @@
 </ul>
 <p class="caption"><span class="caption-text">golangr容器</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="多维数组.html">1. 多维数组</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">2. 切片</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">2.1. 使用方式</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#make">2.2. 使用 make() 函数构造切片</a></li>
+<li class="toctree-l1"><a class="reference internal" href="数组.html">1. 数组</a></li>
+<li class="toctree-l1"><a class="reference internal" href="多维数组.html">2. 多维数组</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. 切片</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">3.1. 使用方式</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make">3.2. 使用 make() 函数构造切片</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="切片操作.html">4. 切片操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="range.html">5. range</a></li>
 </ul>
 
             
@@ -160,7 +164,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>2. 切片</li>
+      <li>3. 切片</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -180,17 +184,17 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>2. 切片<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>3. 切片<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>切片（slice）是对数组的一个连续片段的引用，所以切片是一个引用类型（因此更类似于 C/C++ 中的数组类型，
 或者 Python 中的 list 类型），这个片段可以是整个数组，也可以是由起始和终止索引标识的一些项的子集，需要注意的是，终止索引标识的项不包括在切片内。</p>
 <div class="section" id="id2">
-<h2>2.1. 使用方式<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>3.1. 使用方式<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="nx">slice</span> <span class="p">[</span><span class="nx">开始位置</span> <span class="p">:</span> <span class="nx">结束位置</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="make">
-<h2>2.2. 使用 make() 函数构造切片<a class="headerlink" href="#make" title="Permalink to this headline">¶</a></h2>
+<h2>3.2. 使用 make() 函数构造切片<a class="headerlink" href="#make" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="nx">a</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
 <span class="nx">b</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 </pre></div>
@@ -206,8 +210,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="切片操作.html" class="btn btn-neutral float-right" title="4. 切片操作" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="多维数组.html" class="btn btn-neutral float-left" title="1. 多维数组" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="多维数组.html" class="btn btn-neutral float-left" title="2. 多维数组" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

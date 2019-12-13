@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1. 多维数组 &mdash; My_Study_Golang v1.0.0 documentation</title>
+  <title>2. 多维数组 &mdash; My_Study_Golang v1.0.0 documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. 切片" href="切片.html" />
-    <link rel="prev" title="11. 变量初始化" href="../golang基本语法/变量初始化.html" /> 
+    <link rel="next" title="3. 切片" href="切片.html" />
+    <link rel="prev" title="1. 数组" href="数组.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -110,11 +110,14 @@
 </ul>
 <p class="caption"><span class="caption-text">golangr容器</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">1. 多维数组</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">1.1. 声明方式</a></li>
+<li class="toctree-l1"><a class="reference internal" href="数组.html">1. 数组</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. 多维数组</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">2.1. 声明方式</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="切片.html">2. 切片</a></li>
+<li class="toctree-l1"><a class="reference internal" href="切片.html">3. 切片</a></li>
+<li class="toctree-l1"><a class="reference internal" href="切片操作.html">4. 切片操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="range.html">5. range</a></li>
 </ul>
 
             
@@ -160,7 +163,7 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>1. 多维数组</li>
+      <li>2. 多维数组</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -180,11 +183,11 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>1. 多维数组<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<h1>2. 多维数组<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p>允许使用多维数组，因为数组属于值类型，所以多维数组的所有维度都会在创建时自动初始化零值，
 多维数组尤其适合管理具有父子关系或者与坐标系相关联的数据。</p>
 <div class="section" id="id2">
-<h2>1.1. 声明方式<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<h2>2.1. 声明方式<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kd">var</span> <span class="nx">array_name</span> <span class="p">[</span><span class="nx">size1</span><span class="p">][</span><span class="nx">size2</span><span class="p">]</span><span class="o">...</span><span class="p">[</span><span class="nx">sizen</span><span class="p">]</span> <span class="nx">array_type</span>
 <span class="c1">// demo</span>
 <span class="c1">// 声明一个二维整型数组，两个维度的长度分别是 4 和 2</span>
@@ -208,10 +211,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="切片.html" class="btn btn-neutral float-right" title="2. 切片" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="切片.html" class="btn btn-neutral float-right" title="3. 切片" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../golang基本语法/变量初始化.html" class="btn btn-neutral float-left" title="11. 变量初始化" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="数组.html" class="btn btn-neutral float-left" title="1. 数组" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

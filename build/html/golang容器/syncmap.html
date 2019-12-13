@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>&lt;no title&gt; &mdash; My_Study_Golang v1.0.0 documentation</title>
+  <title>7. sync.Map &mdash; My_Study_Golang v1.0.0 documentation</title>
   
 
   
@@ -34,7 +34,9 @@
   <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="8. 列表" href="列表.html" />
+    <link rel="prev" title="6. map" href="map.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -91,6 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../golang简介/安装go.html">9. 安装go</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../golang简介/工程结构详述.html">10. 工程结构详述</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../golang简介/第一个go.html">11. 第一个go程序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/编译运行.html">12. 编译运行</a></li>
 </ul>
 <p class="caption"><span class="caption-text">golang基本语法</span></p>
 <ul>
@@ -107,11 +110,17 @@
 <li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量初始化.html">11. 变量初始化</a></li>
 </ul>
 <p class="caption"><span class="caption-text">golangr容器</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="数组.html">1. 数组</a></li>
 <li class="toctree-l1"><a class="reference internal" href="多维数组.html">2. 多维数组</a></li>
 <li class="toctree-l1"><a class="reference internal" href="切片.html">3. 切片</a></li>
 <li class="toctree-l1"><a class="reference internal" href="切片操作.html">4. 切片操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="range.html">5. range</a></li>
+<li class="toctree-l1"><a class="reference internal" href="map.html">6. map</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">7. sync.Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="列表.html">8. 列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="空值.html">9. 空值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make和new.html">10. make和new</a></li>
 </ul>
 
             
@@ -157,13 +166,13 @@
     
       <li><a href="../index.html">Docs</a> &raquo;</li>
         
-      <li>&lt;no title&gt;</li>
+      <li>7. sync.Map</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../_sources/golang容器/apend.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/golang容器/syncmap.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -176,12 +185,72 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  
+  <div class="section" id="sync-map">
+<h1>7. sync.Map<a class="headerlink" href="#sync-map" title="Permalink to this headline">¶</a></h1>
+<p>map 在并发情况下，只读是线程安全的，同时读写是线程不安全的。</p>
+<p>sync.Map 没有提供获取 map 数量的方法，替代方法是在获取 sync.Map 时遍历自行计算数量，sync.Map 为了保证并发安全有一些性能损失，
+因此在非并发情况下，使用 map 相比使用 sync.Map 会有更好的性能。</p>
+<div class="highlight-go notranslate"><div class="highlight"><pre><span></span><span class="kn">package</span> <span class="nx">main</span>
+<span class="kn">import</span> <span class="p">(</span>
+	<span class="s">&quot;fmt&quot;</span>
+	<span class="s">&quot;sync&quot;</span>
+<span class="p">)</span>
+
+<span class="kd">func</span> <span class="nx">main01</span><span class="p">()</span>  <span class="p">{</span>
+	
+	<span class="nx">m</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">(</span><span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">int</span><span class="p">)</span>
+
+	<span class="k">go</span> <span class="kd">func</span><span class="p">(){</span>
+		<span class="k">for</span> <span class="p">{</span>
+			<span class="nx">m</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="mi">1</span>
+		<span class="p">}</span>
+	<span class="p">}()</span>
+	<span class="k">go</span> <span class="kd">func</span><span class="p">(){</span>
+		<span class="k">for</span> <span class="p">{</span>
+			<span class="nx">_</span> <span class="p">=</span> <span class="nx">m</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+		<span class="p">}</span>
+	<span class="p">}()</span>
+
+	<span class="k">for</span><span class="p">{</span>
+
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">func</span> <span class="nx">main</span><span class="p">(){</span>
+	
+	<span class="kd">var</span> <span class="nx">m</span> <span class="nx">sync</span><span class="p">.</span><span class="nx">Map</span>
+
+	<span class="nx">m</span><span class="p">.</span><span class="nx">Store</span><span class="p">(</span><span class="s">&quot;one&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+	<span class="nx">m</span><span class="p">.</span><span class="nx">Store</span><span class="p">(</span><span class="s">&quot;two&quot;</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+
+	<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">m</span><span class="p">.</span><span class="nx">Load</span><span class="p">(</span><span class="s">&quot;one&quot;</span><span class="p">))</span>
+
+	<span class="nx">m</span><span class="p">.</span><span class="nx">Delete</span><span class="p">(</span><span class="s">&quot;one&quot;</span><span class="p">)</span>
+
+	<span class="nx">m</span><span class="p">.</span><span class="nx">Range</span><span class="p">(</span><span class="kd">func</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span><span class="nx">v</span> <span class="kd">interface</span><span class="p">{})</span> <span class="kt">bool</span><span class="p">{</span>
+		<span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">k</span><span class="p">,</span><span class="nx">v</span><span class="p">)</span>
+		<span class="k">return</span> <span class="kc">true</span> 
+	<span class="p">})</span>
+
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+
 
            </div>
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="列表.html" class="btn btn-neutral float-right" title="8. 列表" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="map.html" class="btn btn-neutral float-left" title="6. map" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

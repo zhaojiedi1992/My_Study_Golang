@@ -23,6 +23,7 @@ github地址_
     golang简介/安装go
     golang简介/工程结构详述
     golang简介/第一个go
+    golang简介/编译运行
 
 .. toctree::
     :caption: golang基本语法
@@ -52,3 +53,9 @@ github地址_
     golang容器/多维数组
     golang容器/切片
     golang容器/切片操作
+    golang容器/range
+    golang容器/map
+    golang容器/syncmap
+    golang容器/列表
+    golang容器/空值
+    golang容器/make和new

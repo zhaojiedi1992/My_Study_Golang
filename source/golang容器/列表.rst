@@ -1,0 +1,10 @@
+列表
+====================================
+
+列表使用 container/list 包来实现，内部的实现原理是双链表，列表能够高效地进行任意位置的元素插入和删除操作。
+
+
+.. literalinclude:: ../src/list.go
+   :encoding: utf-8
+   :language: go
+

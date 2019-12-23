@@ -23,6 +23,7 @@ github地址_
     golang简介/安装go
     golang简介/工程结构详述
     golang简介/第一个go
+    golang简介/编译运行
 
 .. toctree::
     :caption: golang基本语法
@@ -44,7 +45,7 @@ github地址_
 
 
 .. toctree::
-    :caption: golangr容器
+    :caption: golang容器
     :numbered:
     :glob:
 
@@ -53,5 +54,36 @@ github地址_
     golang容器/切片
     golang容器/切片操作
     golang容器/range
+    golang容器/map
     golang容器/syncmap
     golang容器/列表
+    golang容器/空值
+    golang容器/make和new
+
+
+.. toctree::
+    :caption: 流程控制
+    :numbered:
+    :glob:
+
+    流程控制/if
+    流程控制/for
+    流程控制/forrange
+    流程控制/case
+    流程控制/continue
+    流程控制/break
+
+
+.. toctree::
+    :caption: 流程控制
+    :numbered:
+    :glob:
+
+    函数/函数声明
+    函数/匿名函数
+    函数/接口
+    函数/闭包
+    函数/可变函数
+    函数/延迟执行
+    函数/递归
+    函数/

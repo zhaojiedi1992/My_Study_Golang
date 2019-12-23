@@ -1,0 +1,257 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; My_Study_Golang v1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6. 宕机" href="宕机.html" />
+    <link rel="prev" title="5. 递归" href="递归.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> My_Study_Golang
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">golang简介</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/简介.html">1. 简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/特性.html">2. 特性</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/并发而生.html">3. 并发而生</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/哪些项目使用go.html">4. 哪些项目使用go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/哪些公司使用go.html">5. 哪些公司使用go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/go适合做什么.html">6. go适合做什么</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/go优势和劣势.html">7. go优势和劣势</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/依赖管理.html">8. 依赖管理</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/安装go.html">9. 安装go</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/工程结构详述.html">10. 工程结构详述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/第一个go.html">11. 第一个go程序</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang简介/编译运行.html">12. 编译运行</a></li>
+</ul>
+<p class="caption"><span class="caption-text">golang基本语法</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量逃逸分析.html">1. 变量逃逸分析</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/指针.html">2. 指针</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量生命周期.html">3. 变量生命周期</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量作用域.html">4. 变量作用域</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/关键字与标识符简述.html">5. 关键字与标识符简述</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/匿名变量.html">6. 匿名变量</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量定义.html">7. 变量定义</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/注释.html">8. 注释</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/基本数据类型.html">9. 基本数据类型</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/常量.html">10. 常量</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang基本语法/变量初始化.html">11. 变量初始化</a></li>
+</ul>
+<p class="caption"><span class="caption-text">golang容器</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/数组.html">1. 数组</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/多维数组.html">2. 多维数组</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/切片.html">3. 切片</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/切片操作.html">4. 切片操作</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/range.html">5. range</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/map.html">6. map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/syncmap.html">7. sync.Map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/列表.html">8. 列表</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/空值.html">9. 空值</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../golang容器/make和new.html">10. make和new</a></li>
+</ul>
+<p class="caption"><span class="caption-text">流程控制</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../流程控制/if.html">1. if</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../流程控制/for.html">2. for</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../流程控制/forrange.html">3. for range</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../流程控制/case.html">4. case</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../流程控制/continue.html">5. contine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../流程控制/break.html">6. break</a></li>
+</ul>
+<p class="caption"><span class="caption-text">流程控制</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="函数声明.html">1. 函数声明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="接口.html">2. 接口</a></li>
+<li class="toctree-l1"><a class="reference internal" href="闭包.html">3. 闭包</a></li>
+<li class="toctree-l1"><a class="reference internal" href="延迟执行.html">4. 延迟执行</a></li>
+<li class="toctree-l1"><a class="reference internal" href="递归.html">5. 递归</a></li>
+<li class="toctree-l1"><a class="reference internal" href="宕机.html">6. 宕机</a></li>
+<li class="toctree-l1"><a class="reference internal" href="测试.html">7. 测试</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">My_Study_Golang</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/函数/运行时错误.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="宕机.html" class="btn btn-neutral float-right" title="6. 宕机" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="递归.html" class="btn btn-neutral float-left" title="5. 递归" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, zhaojiedi1992
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

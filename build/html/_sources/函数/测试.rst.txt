@@ -1,0 +1,15 @@
+测试
+===================================
+
+Go语言自带了 testing 测试包，可以进行自动化的单元测试，输出结果验证，并且可以测试性能。
+
+测试文件必须"_test.go结尾", 测试函数必须 "Test开头"
+
+.. literalinclude:: ../src/area.go
+   :encoding: utf-8
+   :language: go
+
+
+.. literalinclude:: ../src/area_test.go
+   :encoding: utf-8
+   :language: go

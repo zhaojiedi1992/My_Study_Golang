@@ -1,0 +1,20 @@
+递归
+===================================
+
+.. code-block:: go 
+
+    func fibonacci(n int) (res int) {
+        if n <= 2 {
+            res = 1
+        } else {
+            res = fibonacci(n-1) + fibonacci(n-2)
+        }
+        return
+    }
+
+
+使用递归的条件
+
+#. 一个问题可以拆分为多个子问题
+#. 拆分后和原问题一致，只是规模小了而已。
+#. 需要有终止条件。

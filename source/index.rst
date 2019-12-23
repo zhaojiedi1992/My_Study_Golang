@@ -45,7 +45,7 @@ github地址_
 
 
 .. toctree::
-    :caption: golangr容器
+    :caption: golang容器
     :numbered:
     :glob:
 
@@ -72,3 +72,22 @@ github地址_
     流程控制/case
     流程控制/continue
     流程控制/break
+
+
+.. toctree::
+    :caption: 流程控制
+    :numbered:
+    :glob:
+
+    函数/函数声明
+    函数/匿名函数
+    函数/接口
+    函数/闭包
+    函数/可变函数
+    函数/延迟执行
+    函数/递归
+    函数/运行时错误
+    函数/宕机
+    函数/测试
+
+

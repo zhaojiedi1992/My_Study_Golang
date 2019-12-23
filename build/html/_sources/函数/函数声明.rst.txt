@@ -1,0 +1,29 @@
+函数声明
+###############
+
+Go语言里面拥三种类型的函数：
+
+- 普通的带有名字的函数
+- 匿名函数或者 lambda 函数
+- 方法
+
+普通函数
+
+.. code-block:: go 
+
+    func hypot(x, y float64) float64 {
+        return math.Sqrt(x*x + y*y)
+    }
+    fmt.Println(hypot(3,4)) // "5"
+
+    // 函数变量
+
+    var f func()
+    f = hypot
+    f()
+
+
+
+.. literalinclude:: ../src/func.go
+   :encoding: utf-8
+   :language: go

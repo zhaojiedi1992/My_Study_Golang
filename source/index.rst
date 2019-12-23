@@ -106,3 +106,13 @@ github地址_
     结构体/模拟继承
     结构体/事件处理
     结构体/io操作
+
+
+.. toctree::
+    :caption: 接口
+    :numbered:
+    :glob:
+
+    接口/断言
+    接口/接口声明
+    接口/简单web

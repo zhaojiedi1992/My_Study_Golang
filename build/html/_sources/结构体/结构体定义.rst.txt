@@ -1,0 +1,103 @@
+结构体
+=========================
+
+定义
+---------------------------
+
+可以通过自定义的方式形成新的类型，结构体就是这些类型中的一种复合类型，结构体是由零个或多个任意类型的值聚合成的实体，
+每个值都可以称为结构体的成员。
+
+.. code-block:: go 
+
+    type Point struct {
+        X int
+        Y int
+    }
+
+初始化
+------------------------------
+
+.. code-block:: go 
+
+    type Point struct {
+        X int
+        Y int
+    }
+    var p Point
+    p.X = 10
+    p.Y = 20
+
+键值对填充结构体
+------------------------------------
+
+.. code-block:: go 
+
+    type People struct {
+        name  string
+        child *People
+    }
+    relation := &People{
+        name: "爷爷",
+        child: &People{
+            name: "爸爸",
+            child: &People{
+                    name: "我",
+            },
+        },
+    }
+
+
+多值方式初始化
+----------------------------------------------
+
+.. code-block:: go 
+
+    type Address struct {
+        Province    string
+        City        string
+        ZipCode     int
+        PhoneNumber string
+    }
+    addr := Address{
+        "四川",
+        "成都",
+        610000,
+        "0",
+    }
+    fmt.Println(addr)
+
+添加方法
+------------------------------
+
+.. code-block:: go 
+
+    type Bag struct {
+        items []int
+    }
+    // 将一个物品放入背包的过程
+    func Insert(b *Bag, itemid int) {
+        b.items = append(b.items, itemid)
+    }
+    func main() {
+        bag := new(Bag)
+        Insert(bag, 1001)
+    }
+
+添加方式2
+---------------------------------
+
+.. code-block:: go 
+
+    type Bag struct {
+        items []int
+    }
+
+    // 这个函数使用接收器， 接收insert方法。
+    func (b *Bag) Insert(itemid int) {
+        b.items = append(b.items, itemid)
+    }
+    func main() {
+        b := new(Bag)
+        b.Insert(1001)
+    }
+

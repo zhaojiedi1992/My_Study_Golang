@@ -1,0 +1,7 @@
+模拟继承
+===================================
+
+
+.. literalinclude:: ../src/jicheng.go
+   :encoding: utf-8
+   :language: go

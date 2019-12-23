@@ -75,7 +75,7 @@ github地址_
 
 
 .. toctree::
-    :caption: 流程控制
+    :caption: 函数
     :numbered:
     :glob:
 
@@ -86,4 +86,19 @@ github地址_
     函数/可变函数
     函数/延迟执行
     函数/递归
-    函数/
+    函数/运行时错误
+    函数/宕机
+    函数/测试
+
+
+
+
+.. toctree::
+    :caption: 结构体
+    :numbered:
+    :glob:
+
+    结构体/结构体定义
+    结构体/结构体添加方法
+    结构体/构造函数
+    结构体/接收器

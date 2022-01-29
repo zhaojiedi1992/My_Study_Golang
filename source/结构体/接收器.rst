@@ -1,2 +1,41 @@
 接收器
 =================================
+Go 方法是作用在接收器（receiver）上的一个函数，接收器是某种类型的变量，因此方法是一种特殊类型的函数。
+
+
+
+添加方法
+------------------------------
+
+.. code-block:: go 
+
+    type Bag struct {
+        items []int
+    }
+    // 将一个物品放入背包的过程
+    func Insert(b *Bag, itemid int) {
+        b.items = append(b.items, itemid)
+    }
+    func main() {
+        bag := new(Bag)
+        Insert(bag, 1001)
+    }
+
+添加方式2
+---------------------------------
+
+.. code-block:: go 
+
+    type Bag struct {
+        items []int
+    }
+
+    // 这个函数使用接收器， 接收insert方法。
+    func (b *Bag) Insert(itemid int) {
+        b.items = append(b.items, itemid)
+    }
+    func main() {
+        b := new(Bag)
+        b.Insert(1001)
+    }
+

@@ -10,7 +10,6 @@ github地址_
 .. toctree::
     :caption: golang简介
     :numbered:
-    :titlesonly:
     :glob:
 
     golang简介/简介
@@ -107,3 +106,23 @@ github地址_
     结构体/模拟继承
     结构体/事件处理
     结构体/io操作
+
+
+.. toctree::
+    :caption: 接口
+    :numbered:
+    :glob:
+
+    接口/断言
+    接口/接口声明
+    接口/简单web
+
+
+.. toctree::
+    :caption: 包
+    :numbered:
+    :glob:
+
+    包/包简介
+    包/gopath
+    包/常用包

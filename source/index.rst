@@ -3,6 +3,8 @@ Linux服务
 
 我自己对golang文档的学习笔记
 
+http://c.biancheng.net/view/4356.html
+
 github地址_
 
 .. _github地址: https://github.com/zhaojiedi1992/My_Study_Golang
@@ -116,3 +118,31 @@ github地址_
     接口/断言
     接口/接口声明
     接口/简单web
+
+
+.. toctree::
+    :caption: 包
+    :numbered:
+    :glob:
+
+    包/包简介
+    包/gopath
+    包/常用包
+    包/导出包符号
+
+.. toctree::
+    :caption: 反射
+    :numbered:
+    :glob:
+    
+    反射/闭包
+    反射/反射定律
+    反射/反射案例
+    反射/性能和灵活性
+
+
+.. toctree::
+    :caption: 并发
+    :numbered:
+    :glob:
+

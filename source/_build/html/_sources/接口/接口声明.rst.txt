@@ -1,0 +1,29 @@
+接口声明
+==========================
+
+Go 语言的接口设计是非侵入式的，接口编写者无须知道接口被哪些类型实现。而接口实现者只需知道实现的是什么样子的接口，但无须指明实现哪一个接口。编译器知道最终编译时使用哪个类型实现哪个接口，或者接口应该由谁来实现。
+
+样例
+
+.. code-block:: go
+
+    type Writer interface {
+        Write(p []byte) (n int, err error)
+    }
+
+
+接口嵌套
+--------------------------------
+
+.. code-block:: go 
+
+    type Writer interface {
+        Write(p []byte) (n int, err error)
+    }
+    type Closer interface {
+        Close() error
+    }
+    type WriteCloser interface {
+        Writer
+        Closer
+    }
